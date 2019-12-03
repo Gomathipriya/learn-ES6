@@ -116,6 +116,11 @@ Note: declare all variables at the beginning of a script
 
 ### Use Strict
 
+* JavaScript code should be executed in "strict mode".
+* helps to write cleaner code, like preventing from using undeclared variables.
+* using undeclared variable or object is not allowed
+* "this" object that called the function. If the object is not specified, functions in strict mode will return undefined and functions in normal mode will return the global object (window)
+
 ```
 // note: no "use strict" in this example
 num = 5; // the variable "num" is created if it didn't exist
@@ -124,6 +129,11 @@ alert(num); // 5
 "use strict";
 num = 5; // error: num is not defined
 
+"use strict";
+function myFunction() {
+  alert(this); // will alert "undefined"
+}
+myFunction();
 ```
 
 ### Hoisting
