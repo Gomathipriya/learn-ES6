@@ -8,9 +8,10 @@
 * Then - LiveScript - Younger brother to Java - Now - FullyIndependent (ECMAScript)
 * Latest version ES10 (June 2019) , Major version ES6 (June 2015), ES.Next (future proposals)
 
-|   Client side scripting       |  Server side scripting       |
-| Web browser                   | Server                       |
-| Control Browser and DOM eg, mouse click,form input |  Communicate with DB, file manipulation  |
+|   Client side scripting       |  Server side scripting        |
+| ------------------------------| ------------------------------|
+| Web browser                   | Server                        |
+| Control Browser and DOM eg, mouse click,form input |  Communicate with DB, file manipulation     |
 
 ### JavaScript Engine
 
