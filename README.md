@@ -39,3 +39,8 @@
 [gmail cant access user account info related to youtube and vice versa ]
 * CORS ( Cross Origin Resource Sharing) - receive data from other sites/domain. Can be done by explicit agreement in HTTP headers
 
+## Object Oriented JavaScript
+
+```
+
+```
