@@ -42,3 +42,18 @@
 ## Object Oriented JavaScript
 
 ![OOPS](/OOPS.jpg)
+
+## Data types
+
+* When adding a number and a string, JavaScript will treat the number as a string.
+* JavaScript evaluates expressions from left to right. Different sequences can produce different results
+<code>
+  var x = 16 + 4 + "Volvo"; // 20Volvo
+  var x = "Volvo" + 16 + 4; //Volvo164
+</code>
+* dynamic types - same variable can be used to hold different data types
+<code>
+  var x;           // Now x is undefined
+  x = 5;           // Now x is a Number
+  x = "John";      // Now x is a String
+</code>
