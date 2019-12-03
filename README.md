@@ -43,7 +43,7 @@
 
 ![OOPS](/OOPS.jpg)
 
-## Data types
+### Data types
 
 * When adding a number and a string, JavaScript will treat the number as a string.
 * JavaScript evaluates expressions from left to right. Different sequences can produce different results
@@ -51,13 +51,14 @@
   var x = 16 + 4 + "Volvo"; // 20Volvo
   var x = "Volvo" + 16 + 4; //Volvo164
 ```
-* dynamic types - same variable can be used to hold different data types
+* dynamic types - infer variable types at runtime 
 ```
   var x;           // Now x is undefined
   x = 5;           // Now x is a Number
   x = "John";      // Now x is a String
 ```
-* primitive data - simple data value with no additional properties and methods.
+* Weakly typed -  allow types to be inferred as another type - same variable can be used to hold different data types 
+* primitive data - simple data value with no additional properties and methods - immutable.
 ```
 typeof "John"              // Returns "string"
 typeof 3.14                // Returns "number"
@@ -71,3 +72,86 @@ typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
 typeof null                  // Returns "object"
 typeof function myFunc(){}   // Returns "function"
 ```
+* Statically typed means the type is enforced  - eg Typescript
+```
+int x = 5
+string y = 'abc'
+```
+
+### Variables
+
+* containers for storing data values.
+* must be identified with unique names - identifiers - case-sensitive
+* Declaration - Creating a variable in JavaScript 
+* Definition - assigning a value to a variable
+* re-declare a JavaScript variable will not lose its value
+* If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated
+* local variable - declared inside block or function - accessible within the function or block only
+```
+function abc(){  
+var x=10;//local variable  
+}  
+```
+* global variable - accessible from any function - declared outside the function or declared with window object
+```
+var data=200;//gloabal variable  
+function a(){  
+alert(window.data);//accessing global variable 
+console.log(data);  
+}  
+function b(){  
+console.log(data);  
+}  
+a();//calling JavaScript function  
+b(); 
+```
+* To declare JavaScript global variables inside function - use Window Object
+```
+function m(){  
+window.value=100;//declaring global variable by window object  
+}  
+```
+
+Note: declare all variables at the beginning of a script
+
+### Use Strict
+
+```
+// note: no "use strict" in this example
+num = 5; // the variable "num" is created if it didn't exist
+alert(num); // 5
+
+"use strict";
+num = 5; // error: num is not defined
+
+```
+
+### Hoisting
+
+* the variable declaration is moved to the top of the function or global code
+```
+bla = 2;
+var bla;
+
+// ...is implicitly understood as:
+
+var bla;
+bla = 2;
+
+function do_something() {
+  console.log(bar); // undefined
+  var bar = 111;
+  console.log(bar); // 111
+}
+
+// ...is implicitly understood as:
+
+function do_something() {
+  var bar;
+  console.log(bar); // undefined
+  bar = 111;
+  console.log(bar); // 111
+}
+```
+
+Note: recommended to always declare variables at the top of their scope - so it's clear which variables are function scoped (local) and which are resolved on the scope chain
