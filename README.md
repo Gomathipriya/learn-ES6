@@ -198,3 +198,32 @@ smallvalues = a.filter(function(x) { return x < 3 });   // [2, 1]
 ```
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
+### Objects
+
+* Objects are mutable: They are addressed by reference, not by value.
+
+```
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+
+var x = person;
+x.age = 10;           // This will change both x.age and person.age
+```
+
+### Prototype 
+
+* All JavaScript objects inherit properties and methods from a prototype:
+  Date objects inherit from Date.prototype
+  Array objects inherit from Array.prototype
+* Object.prototype is on the top of the prototype inheritance chain
+* allows to add new methods to objects constructors
+
+```
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+```
