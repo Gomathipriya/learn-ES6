@@ -20,11 +20,12 @@
 * Different JSEngines
 
 | Engine      | Browser      |
+| ------------| -------------|
 | V8          | Chrome/Opera |
 | SpiderMonkey| Firefox      |
 | Trident/Chakra | IE        |
 | Chakra Core | Edge         |
-| Nitro & Squirrel Fish | Safari      |
+| Nitro & Squirrel Fish | Safari       |
 
 ### Advantages
 
