@@ -57,3 +57,17 @@
   x = 5;           // Now x is a Number
   x = "John";      // Now x is a String
 ```
+* primitive data - simple data value with no additional properties and methods.
+```
+typeof "John"              // Returns "string"
+typeof 3.14                // Returns "number"
+typeof true                // Returns "boolean"
+typeof x                   // Returns "undefined" (if x has no value)
+```
+* Complex Data
+```
+typeof {name:'John', age:34} // Returns "object"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof null                  // Returns "object"
+typeof function myFunc(){}   // Returns "function"
+```
