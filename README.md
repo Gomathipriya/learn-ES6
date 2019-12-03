@@ -175,3 +175,26 @@ var txt = "Hello World!";
 var sln = txt.length; // 12
 txt.indexOf("World"); //6
 ```
+https://www.w3schools.com/jsref/jsref_obj_string.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+### Array
+
+* JavaScript does not support arrays with named indexes.It supports only numbered indexes.
+* map method takes in an array, and creates a new array with the results of calling a function for every element in that array
+* Array.filter() is another useful method. It works by creating a new array from the original of all the elements in that array that pass a test implemented by the provided function
+```
+a = [1, 2, 3];
+
+b = a.map(function(x) { return x*x; });  // b is [1, 4, 9]
+```
+* reduce takes in an array, applies a function against something called an accumulator (more on that in a second), and each element in the array, and reduces it down to a single value.
+eg adding up numbers in an array
+
+```
+a = [5, 4, 3, 2, 1];
+
+smallvalues = a.filter(function(x) { return x < 3 });   // [2, 1]
+```
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
