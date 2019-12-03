@@ -165,3 +165,13 @@ function do_something() {
 ```
 
 Note: recommended to always declare variables at the top of their scope - so it's clear which variables are function scoped (local) and which are resolved on the scope chain
+
+### String
+
+* length - returns the length of a string
+* indexOf() - returns the index of (the position of) the first occurrence of a specified text in a string
+```
+var txt = "Hello World!";
+var sln = txt.length; // 12
+txt.indexOf("World"); //6
+```
