@@ -43,6 +43,12 @@
 
 ![OOPS](/OOPS.jpg)
 
+namespace - specific name to refer
+encapsulation - Wrapping properties and functions within single unit
+abstraction - creating simple model for complex things ( most important aspect)
+polymorphism - more than one form 
+inheritance - reuse or inherit certain properties from others
+
 ### Data types
 
 * When adding a number and a string, JavaScript will treat the number as a string.
