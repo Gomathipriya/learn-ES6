@@ -41,6 +41,4 @@
 
 ## Object Oriented JavaScript
 
-```
-
-```
+![OOPS](/OOPS.jpg)
