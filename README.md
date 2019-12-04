@@ -217,6 +217,25 @@ var x = person;
 x.age = 10;           // This will change both x.age and person.age
 ```
 
+### Regular expressions
+
+* Patterns used to match character combinations in strings
+* Regular expressions are also objects
+```
+var re = /ab+c/;
+var re = new RegExp('ab+c');
+
+// The string:
+var str = "Hello world!";
+
+// Look for "Hello"
+var patt = /Hello/g;
+var result = patt.test(str);
+
+// Look for "W3Schools"
+patt2 = /W3Schools/g;
+result2 = patt2.test(str);
+```
 ### Prototype 
 
 * All JavaScript objects inherit properties and methods from a prototype:
