@@ -254,3 +254,17 @@ function Person(first, last, age, eyecolor) {
 
 Person.prototype.nationality = "English";
 ```
+### Functions
+
+
+### BOM & DOM
+
+### Event Handling
+
+### Design Patterns
+
+### Closure
+
+### AJAX
+
+### JSON
