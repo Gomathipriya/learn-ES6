@@ -256,6 +256,18 @@ Person.prototype.nationality = "English";
 ```
 ### Functions
 
+* block of code designed to perform a particular task
+* parameters are listed inside the parentheses () in the function definition.
+* arguments are the values received by the function when it is invoked.
+* When JavaScript reaches a return statement, the function will stop executing.
+*  Define the code once, and use it many times.
+
+
+```
+function myFunction(p1, p2) {
+  return p1 * p2;   // The function returns the product of p1 and p2
+}
+```
 
 ### BOM & DOM
 
