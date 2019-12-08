@@ -271,6 +271,34 @@ function myFunction(p1, p2) {
 
 ### BOM & DOM
 
+#### Browser Object Model (BOM)
+* allows JavaScript to "talk to" the browser
+* All global JavaScript objects, functions, and variables automatically become members of the window object.
+* Even the document object (of the HTML DOM) is a property of the window object
+
+```
+window.document.getElementById("header");
+same as
+document.getElementById("header");
+
+window.open() - open a new window
+window.close() - close the current window
+window.moveTo() - move the current window
+window.resizeTo() - resize the current window
+```
+
+#### Document Object Model (DOM)
+* a programming interface for HTML and XML documents
+*  represents the page so that programs can change the document structure, style, and content
+* an object-oriented representation of the web page, which can be modified with a scripting language
+
+```
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+```
+
 ### Event Handling
 
 ### Design Patterns
