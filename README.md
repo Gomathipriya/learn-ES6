@@ -313,6 +313,50 @@ document.getElementById("demo").innerHTML = "Hello World!";
 
 ### Event Handling
 
+#### HTML Events
+
+* An HTML web page has finished loading
+* An HTML input field was changed
+* An HTML button was clicked
+```
+<button onclick="this.innerHTML=Date()">The time is?</button>
+```
+
+#### Common HTML Events
+
+| Event	       |  Description   |
+| ------------ | ---------------|
+| onchange	   | An HTML element has been changed |
+| onclick	     | The user clicks an HTML element  |
+| onmouseover	 | The user moves the mouse over an HTML element |
+| onmouseout	 | The user moves the mouse away from an HTML element |
+| onkeydown	   | The user pushes a keyboard key |
+| onload	     | The browser has finished loading the page |
+
+#### HTML DOM EventListener
+
+```
+window.addEventListener("resize", function(){
+  document.getElementById("demo").innerHTML = Math.random();
+});
+```
+
+#### Event propagation
+
+* a way of defining the element order when an event occurs
+* addEventListener(event, function, useCapture);
+* default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation
+
+1. Event Bubbling
+   the inner most element's event is handled first and then the outer
+
+2. Event Capturing
+   the outer most element's event is handled first and then the inner
+
+```
+document.getElementById("myP").addEventListener("click", myFunction, true);
+```
+
 ### Design Patterns
 
 ### Closure
