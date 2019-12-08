@@ -299,6 +299,13 @@ The methods to access all HTML elements
 The events for all HTML elements
 ```
 
+* A property is a value that you can get or set (like changing the content of an HTML element). e.g. innerHTML
+* A method is an action you can do (like add or deleting an HTML element). e.g. getElementById
+
+```
+document.getElementById("demo").innerHTML = "Hello World!";
+```
+
 ### Event Handling
 
 ### Design Patterns
