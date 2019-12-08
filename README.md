@@ -305,7 +305,7 @@ The events for all HTML elements
 ```
 document.getElementById("demo").innerHTML = "Hello World!";
 ```
-![DOM](/DOM.jpg)
+![DOM](/DOM.JPG)
 
 ### Event Handling
 
