@@ -288,6 +288,43 @@ window.resizeTo() - resize the current window
 ```
 ![BOM](/BOM.JPG)
 
+##### Window.location
+
+* used to get the current page address (URL) and to redirect the browser to a new page
+
+```
+window.location.href returns the href (URL) of the current page
+window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path and filename of the current page
+window.location.protocol returns the web protocol used (http: or https:)
+window.location.assign() loads a new document
+
+```
+##### Window.history
+
+* contains the browsers history
+* history.back() - same as clicking back in the browser
+* history.forward() - same as clicking forward in the browser
+
+##### Popup Boxes
+
+* Alert Box - to make sure information comes through to the user
+* Confirm Box - used if you want the user to verify or accept something
+* Prompt Box - used if you want the user to input a value before entering a page
+
+```
+window.alert("sometext");
+window.confirm("sometext");
+window.prompt("sometext","defaultText");
+```
+##### Timing Events
+
+setTimeout(function, milliseconds)
+Executes a function, after waiting a specified number of milliseconds.
+
+setInterval(function, milliseconds)
+Same as setTimeout(), but repeats the execution of the function continuously.
+
 #### Document Object Model (DOM)
 * a programming interface for HTML and XML documents
 *  represents the page so that programs can change the document structure, style, and content
