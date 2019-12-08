@@ -286,6 +286,7 @@ window.close() - close the current window
 window.moveTo() - move the current window
 window.resizeTo() - resize the current window
 ```
+![BOM](/BOM.JPG)
 
 #### Document Object Model (DOM)
 * a programming interface for HTML and XML documents
@@ -306,6 +307,9 @@ The events for all HTML elements
 document.getElementById("demo").innerHTML = "Hello World!";
 ```
 ![DOM](/DOM.JPG)
+![FindHTMLElement](/FindHTMLElement.JPG)
+![ChangingHtmlElement](/ChangingHtmlElement.JPG)
+![AddDeleteElements](/AddDeleteElements.JPG)
 
 ### Event Handling
 
