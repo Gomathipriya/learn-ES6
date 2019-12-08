@@ -398,6 +398,36 @@ document.getElementById("myP").addEventListener("click", myFunction, true);
 
 ### Closure
 
-### AJAX
+### AJAX (Asynchronous JavaScript And XML)
 
-### JSON
+* Read data from a web server - after the page has loaded
+* Update a web page without reloading the page
+* Send data to a web server - in the background
+
+```
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+```
+
+### JSON (JavaScript Object Notation)
+
+* JSON is a syntax for storing and exchanging data.
+* JSON is text, written with JavaScript object notation.
+* JSON.stringify
+* JSON.parse(text)
