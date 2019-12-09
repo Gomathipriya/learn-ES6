@@ -236,6 +236,22 @@ var result = patt.test(str);
 patt2 = /W3Schools/g;
 result2 = patt2.test(str);
 ```
+
+### Functions
+
+* block of code designed to perform a particular task
+* parameters are listed inside the parentheses () in the function definition.
+* arguments are the values received by the function when it is invoked.
+* When JavaScript reaches a return statement, the function will stop executing.
+*  Define the code once, and use it many times.
+
+
+```
+function myFunction(p1, p2) {
+  return p1 * p2;   // The function returns the product of p1 and p2
+}
+```
+
 ### Prototype 
 
 * All JavaScript objects inherit properties and methods from a prototype:
@@ -253,20 +269,6 @@ function Person(first, last, age, eyecolor) {
 }
 
 Person.prototype.nationality = "English";
-```
-### Functions
-
-* block of code designed to perform a particular task
-* parameters are listed inside the parentheses () in the function definition.
-* arguments are the values received by the function when it is invoked.
-* When JavaScript reaches a return statement, the function will stop executing.
-*  Define the code once, and use it many times.
-
-
-```
-function myFunction(p1, p2) {
-  return p1 * p2;   // The function returns the product of p1 and p2
-}
 ```
 
 ### BOM & DOM
@@ -394,9 +396,25 @@ window.addEventListener("resize", function(){
 document.getElementById("myP").addEventListener("click", myFunction, true);
 ```
 
-### Design Patterns
-
 ### Closure
+
+* combination of a function bundled together (enclosed) with references to its surrounding state
+* gives you access to an outer function’s scope from an inner function
+* Global variables can be made local (private) with closures.
+
+```
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter}
+})();
+
+add();
+add();
+add();
+
+// the counter is now 3
+
+```
 
 ### AJAX (Asynchronous JavaScript And XML)
 
@@ -431,3 +449,5 @@ function loadDoc() {
 * JSON is text, written with JavaScript object notation.
 * JSON.stringify
 * JSON.parse(text)
+
+### Design Patterns
