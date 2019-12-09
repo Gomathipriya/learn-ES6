@@ -451,3 +451,11 @@ function loadDoc() {
 * JSON.parse(text)
 
 ### Design Patterns
+
+### ES6 Concepts
+
+### Debugging
+
+### Frameworks
+
+### Unit testing
