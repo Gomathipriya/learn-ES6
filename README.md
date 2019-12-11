@@ -450,6 +450,79 @@ function loadDoc() {
 * JSON.stringify
 * JSON.parse(text)
 
+### Call, Apply, Bind
+
+#### Apply
+
+* Method of function prototype
+* Used to call other functions with a provided this keyword value and argument
+* i.e.we can call any function and explicity specify what this should reference in the calling function
+* It will take all the values inside the array as individual arguments
+
+```
+function.apply(this, [args])
+
+var array=['a','b'];
+  var elements = [1,2,3];
+  array.push(elements);
+  return array.length;//3
+  
+  array.push.apply(array,elements);
+  return array.length; //5
+```
+
+#### Call
+
+* Used to a function with given this and arguments provided to it individually
+* Apply takes argument in array/ array like object while call takes inividual arguments
+
+```
+function .call(thisarg, arg1, arg2.....)
+
+function Product(name, price) {
+  this.name = name;
+  this.price = price;
+}
+
+function Pizza(name, price){
+  Product.call(this,name,price);
+  this.category = 'Pizza';
+}
+
+function Toy(name, price){
+   Product.call(this,name, price);
+   this.category ="toy";
+}
+
+var pizza = new Pizza('Cheese',500);
+var toy = new Toy('Robot',1000);
+
+document.getElementById("demo").innerHTML = JSON.stringify(toy);
+```
+
+#### Bind
+
+* Returns a copy of function with the supplied this and arguments
+* Same as call but bind returns a new function but call doesnot
+
+```
+function.bind(this,arg1, arg2,....)
+
+var x = 9;
+var module = {
+  x : 81,
+  getX  : function() {
+    return this.x;
+  }
+}
+var retrieveX = module.getX;
+var boundGetX = retrieveX.bind(module);
+
+document.getElementById("demo").innerHTML = module.getX(); //81
+document.getElementById("demo").innerHTML = retrieveX(); // 9
+document.getElementById("demo").innerHTML = boundGetX(); // 81
+```
+
 ### Design Patterns
 
 ### ES6 Concepts
